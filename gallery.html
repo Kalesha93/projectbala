@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMK Photography - Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <h1 class="web-name">BMK Photography</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav me-auto ms-lg-4">
+          <a class="nav-link" href="home.html">Home</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="wedding.html">Weddings</a>
+          <a class="nav-link active fw-semibold" aria-current="page" href="gallery.html">Gallery</a>
+          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </div>
+        <button type="button" class="btn btn-dark">Log in</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="card text-bg-dark hero-card">
+    <img src="https://manishankar.liveblog365.com/wp-content/uploads/2024/08/in-photo-photo-1.jpg" class="card-img" alt="banner" />
+    <div class="card-img-overlay text-white">
+      <h1 class="card-title display-4 fw-bold">Gallery</h1>
+      <h5 class="card-text my-3">Here is where you can view, download, and share your photos. Oh! you can also order prints if you'd like :). Please contact me for your password or any other assistance needed!</h5>
+    </div>
+  </div>
+
+  <!-- Gallery Filters -->
+  <div class="container">
+    <div class="wedding">
+      <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 mb-3">PORTFOLIO</span>
+      <h2 class="display-5">Our Work</h2>
+      <div class="mt-4">
+        <button class="btn btn-outline-dark filter-btn active" data-filter="all">All</button>
+        <button class="btn btn-outline-dark filter-btn" data-filter="wedding">Wedding</button>
+        <button class="btn btn-outline-dark filter-btn" data-filter="portrait">Portrait</button>
+        <button class="btn btn-outline-dark filter-btn" data-filter="event">Event</button>
+      </div>
+    </div>
+    
+    <!-- Gallery Grid -->
+    <div class="row g-3 mb-5" id="gallery-grid">
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="wedding">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1754394642%2Fwedding_cards%2Fz2tfkxm5rob0otj4ifzv.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Wedding 1" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="wedding">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1761384564%2Fwedding_cards%2Fo6eohv8xl9uomq0qbz44.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Wedding 2" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="wedding">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1774268774%2Fwedding_cards%2Fsv6yvtxqcnneh4ppotri.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Wedding 3" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="portrait">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1765121816%2Fwedding_cards%2Fo1lniuydsmwrqhbln3kv.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Portrait 1" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="portrait">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1771834645%2Fwedding_cards%2Fbyin8wdbf2aqqndu6xxt.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Portrait 2" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="event">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1745778772%2Fwedding_cards%2Fn9xjutdzajahhzck1pgp.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Event 1" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="wedding">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1749391538%2Fwedding_cards%2Fxim052wgguomc3spj9eb.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Wedding 4" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="event">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1745416421%2Fwedding_cards%2Fuk6ez6zum8zild3tx2oe.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Event 2" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="wedding">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1750086516%2Fwedding_cards%2Fabgnxot1jrqh3admqqay.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Wedding 5" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="portrait">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1764434110%2Fcarousel-images%2Fgfvzdsk4r3npfm9kiqsl.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Portrait 3" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="portrait">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1764433947%2Fcarousel-images%2Ffgbuoicipe3uxxx6bjmp.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Portrait 4" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item" data-category="event">
+        <img src="https://pkphotography.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddamvvrby%2Fimage%2Fupload%2Fv1764434154%2Fcarousel-images%2Fqlz5oqo6smjnovl3jlim.jpg&w=1920&q=75" 
+             class="img-fluid gallery-img shadow-sm" alt="Event 3" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-0">
+          <img src="" class="img-fluid rounded" id="lightboxImage" alt="Gallery Image">
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Behind The Scenes -->
+<section class="container">
+  <div class="section-heading">
+    <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 mb-3">BTS</span>
+    <h2 class="display-5">Behind The Scenes</h2>
+    <p class="text-muted">See how the magic happens</p>
+  </div>
+  <div class="row g-4 mb-5">
+    <div class="col-lg-6">
+      <div class="card shadow-sm">
+        <div class="ratio ratio-16x9">
+          <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800" class="object-fit-cover rounded-top" alt="bts1">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title1">Setting Up The Perfect Shot</h5>
+          <p class="text-muted">Our team spends hours perfecting lighting and angles before the big moment.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card shadow-sm">
+        <div class="ratio ratio-16x9">
+          <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800" class="object-fit-cover rounded-top" alt="bts2">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title1">Team In Action</h5>
+          <p class="text-muted">Multiple photographers ensure we never miss a candid moment during events.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <div class="section-heading">
+    <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 mb-3">AWARDS</span>
+    <h2 class="display-5">Awards & Recognition</h2>
+  </div>
+  <div class="row g-4 text-center mb-5">
+    <div class="col-lg-3 col-6">
+      <div class="p-4">
+        <i class="bi bi-trophy-fill text-dark" style="font-size: 3rem;"></i>
+        <h4 class="mt-3 fw-bold">50+</h4>
+        <p class="text-muted mb-0">Awards Won</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-6">
+      <div class="p-4">
+        <i class="bi bi-camera-fill text-dark" style="font-size: 3rem;"></i>
+        <h4 class="mt-3 fw-bold">500+</h4>
+        <p class="text-muted mb-0">Weddings Shot</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-6">
+      <div class="p-4">
+        <i class="bi bi-people-fill text-dark" style="font-size: 3rem;"></i>
+        <h4 class="mt-3 fw-bold">1000+</h4>
+        <p class="text-muted mb-0">Happy Clients</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-6">
+      <div class="p-4">
+        <i class="bi bi-star-fill text-dark" style="font-size: 3rem;"></i>
+        <h4 class="mt-3 fw-bold">4.9/5</h4>
+        <p class="text-muted mb-0">Google Rating</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <div class="section-heading">
+    <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 mb-3">SOCIAL</span>
+    <h2 class="display-5">Follow @bmkphotography</h2>
+  </div>
+  <div class="row g-2 mb-4">
+    <div class="col-4 col-md-2"><img src="https://picsum.photos/300/300?random=1" class="img-fluid rounded" alt="insta1"></div>
+    <div class="col-4 col-md-2"><img src="https://picsum.photos/300/300?random=2" class="img-fluid rounded" alt="insta2"></div>
+    <div class="col-4 col-md-2"><img src="https://picsum.photos/300/300?random=3" class="img-fluid rounded" alt="insta3"></div>
+    <div class="col-4 col-md-2"><img src="https://picsum.photos/300/300?random=4" class="img-fluid rounded" alt="insta4"></div>
+    <div class="col-4 col-md-2"><img src="https://picsum.photos/300/300?random=5" class="img-fluid rounded" alt="insta5"></div>
+    <div class="col-4 col-md-2"><img src="https://picsum.photos/300/300?random=6" class="img-fluid rounded" alt="insta6"></div>
+  </div>
+  <div class="text-center mb-5">
+    <a href="https://instagram.com" class="btn btn-dark btn-lg">
+      <i class="bi bi-instagram me-2"></i>Follow on Instagram
+    </a>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="footer-dark pt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-3">BMK Photography</h5>
+          <p class="text-white-50">Portfolios, weddings, products, events, corporates, real estate & more captured with passion, delivered with perfection.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="wedding.html">Weddings</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-3">Services</h5>
+          <ul class="list-unstyled text-white-50">
+            <li>Wedding</li>
+            <li>Event</li>
+            <li>Live Streaming</li>
+            <li>Design Services</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-3">Contact</h5>
+          <ul class="list-unstyled text-white-50">
+            <li><i class="bi bi-envelope me-2"></i>prabhakar@pkphotography.in</li>
+            <li><i class="bi bi-phone me-2"></i>+91 9876543210</li>
+            <li><i class="bi bi-geo-alt me-2"></i>Tirupati, Andhra Pradesh</li>
+          </ul>
+        </div>
+      <hr class="border-secondary my-4">
+      <div class="text-center text-white-50 pb-3">
+        <p class="mb-0">Copyright © 2026 BMK Photography. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>>
+
+</body>
+</html>
